@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int i,j=2,ch=0;
+    printf("\n ENTER ANY NUMBER:");
+    scanf("%d",&i);
+    
+    if(i<=1)
+    ch=1;
+    
+    while(j<=i/2)
+    {
+        if(i%j==0)
+        {
+            ch=1;
+            break;
+        }
+    else
+    {
+        j++;
+    }
+    }
+    if(ch==0)
+    {
+        printf("%d IS A PRIME NUMBER",i);
+    }
+    else
+    {
+        printf("%d IS NOT A PRIME NUMBER",i);
+    }
+}
