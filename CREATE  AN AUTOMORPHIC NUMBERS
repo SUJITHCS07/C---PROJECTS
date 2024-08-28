@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+int n;
+int num;
+long int sq;
+int r;
+int t;
+int equal;
+printf("Enter the number:");
+scanf("%d",&n);
+num=n;
+sq=n*n;
+t=10;
+printf("\n Square of %d is %Id \n",n,sq);
+while(n>0)
+{
+r=sq%t;
+if(num==r)
+{
+equal=1;
+break;
+}
+n=n/10;
+t=t*10;
+}
+if(equal==1)
+{
+printf("%d is an automorphic number",num);
+}
+else
+{
+printf("%d is not an automorphic number",num);
+}
+return 0;
+}
